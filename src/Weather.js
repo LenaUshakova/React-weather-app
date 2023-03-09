@@ -41,14 +41,17 @@ export default function Weather() {
         </div>
         <div className="weather-detail">
           <div className="precipitation">
+            <i className="fa-solid fa-cloud-rain weather-detail-icon"></i>
             <span className="detail">3</span>
             <span className="detail"> mm</span>
           </div>
           <div className="wind">
+            <i className="fa-solid fa-wind weather-detail-icon"></i>
             <span className="detail">2</span>
             <span className="detail"> km/h</span>
           </div>
           <div className="humidity">
+            <i className="fa-solid fa-droplet weather-detail-icon"></i>
             <span className="detail">13</span>
             <span className="detail"> %</span>
           </div>
