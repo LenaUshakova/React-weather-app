@@ -7,6 +7,7 @@ export default function App() {
         <a
           href="https://github.com/LenaUshakova/React-weather-app"
           target={"_blank"}
+          rel="noreferrer"
           className="footer-link"
         >
           Open-source code
@@ -14,7 +15,8 @@ export default function App() {
         {", "}by{" "}
         <a
           href="https://www.linkedin.com/in/lena-ushakova/"
-          target={"_blank"}
+          target="_blank"
+          rel="noreferrer"
           className="footer-link"
         >
           Olena Ushakova
