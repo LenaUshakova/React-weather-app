@@ -1,11 +1,18 @@
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <footer className="App-footer"></footer>
+      <footer className="footer">
+        <a
+          href="https://github.com/LenaUshakova/React-weather-app"
+          target={"_blank"}
+          className="footer-link"
+        >
+          Open-source code
+        </a>
+        {", "}by Olena Ushakova
+      </footer>
     </div>
   );
 }
-
-export default App;
