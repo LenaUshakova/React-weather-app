@@ -1,0 +1,19 @@
+body {
+  background-color: #edf0f4;
+}
+
+.App .content {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #e4e5e5;
+  display: block;
+  padding: 40px 50px 10px;
+  margin: 10px auto;
+  font-family: "Work Sans", sans-serif;
+}
+
+@media (min-width: 767px) {
+  .App .content {
+    max-width: 700px;
+  }
+}

@@ -1,0 +1,18 @@
+.Weather .input-form {
+  text-align: center;
+}
+
+.Weather .search-field {
+  background-color: #e3e4e9;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 15px 5px 45px;
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Work Sans";
+  background-image: url("../public/location.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
