@@ -11,7 +11,14 @@ export default function App() {
         >
           Open-source code
         </a>
-        {", "}by Olena Ushakova
+        {", "}by{" "}
+        <a
+          href="https://www.linkedin.com/in/lena-ushakova/"
+          target={"_blank"}
+          className="footer-link"
+        >
+          Olena Ushakova
+        </a>
       </footer>
     </div>
   );
