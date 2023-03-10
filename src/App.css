@@ -12,8 +12,32 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.App .footer {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 50%;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+.App .footer-link {
+  color: black;
+  opacity: 90%;
+}
+
 @media (min-width: 767px) {
   .App .content {
     max-width: 700px;
+    /* box-sizing: border-box; */
+  }
+}
+
+@media (max-width: 767px) {
+  .App .content {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .App .footer {
+    text-align: center;
+    margin: 5px 10px 15px;
   }
 }
