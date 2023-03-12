@@ -29,7 +29,7 @@
 .Weather #location-pointer {
   cursor: pointer;
   color: #ef7151;
-  padding: 0px 5px 0px;
+  padding: 0px 8px 0px;
 }
 
 .Weather .main-info {
@@ -108,14 +108,15 @@
 .Weather .weather-text {
   font-size: 25px;
   font-weight: 600;
-  opacity: 35%;
+  opacity: 40%;
+  margin-bottom: 5px;
 }
 .Weather .min-temperature,
 .max-temperature,
 .celsius {
   font-size: 16px;
   font-weight: 500;
-  opacity: 65%;
+  opacity: 60%;
 }
 
 .Weather .weather-detail {
@@ -171,6 +172,7 @@
   .Weather .temperature .unit {
     font-size: 15px;
     bottom: 9px;
+    right: -11px;
   }
   .Weather .weather-text {
     margin: 10px;

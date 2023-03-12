@@ -9,6 +9,7 @@ export default function Weather() {
           type="search"
           placeholder="Enter a city"
           className="search-field"
+          autoFocus="on"
         />
         <i
           className="fa-solid fa-location-crosshairs"
@@ -35,7 +36,7 @@ export default function Weather() {
           </div>
           <div className="weather-text">Cloudy</div>
           <div className="min-temperature inline">10</div>
-          <div className="celsius inline">{"° "}/</div>
+          <div className="celsius inline">{"° "}/ </div>
           <div className="max-temperature inline">14</div>
           <div className="celsius inline">°</div>
         </div>
