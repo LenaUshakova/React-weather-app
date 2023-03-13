@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import CurrentWeather from "./CurrentWeather";
 
 export default function MainInfo(props) {
   return (
@@ -12,17 +13,13 @@ export default function MainInfo(props) {
       <div className="weather-icon">
         <WeatherIcon code={props.data.icon} />
       </div>
-      <div className="current-weather">
-        <div className="temperature inline">
-          <span className="value">{props.data.temperature}</span>
-          <span className="unit">C</span>
-        </div>
-        <div className="weather-text">{props.data.description}</div>
-        <div className="min-temperature inline">{props.data.mintemp}</div>
-        <div className="celsius inline">{"° "}/ </div>
-        <div className="max-temperature inline">{props.data.maxtemp}</div>
-        <div className="celsius inline">°</div>
-      </div>
+      <CurrentWeather
+        celsius={props.data.temperature}
+        description={props.data.description}
+        mintemp={props.data.mintemp}
+        maxtemp={props.data.maxtemp}
+      />
+     
       <div className="weather-detail">
         <div className="precipitation">
           <i className="fa-solid fa-cloud-rain weather-detail-icon"></i>
