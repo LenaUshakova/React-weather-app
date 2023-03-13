@@ -19,11 +19,11 @@ export default function MainInfo(props) {
         mintemp={props.data.mintemp}
         maxtemp={props.data.maxtemp}
       />
-     
+
       <div className="weather-detail">
         <div className="precipitation">
           <i className="fa-solid fa-cloud-rain weather-detail-icon"></i>
-          <span className="detail">{props.data.precipitation}</span>
+          <span className="detail"></span>
           <span className="detail"> mm</span>
         </div>
         <div className="wind">
