@@ -71,11 +71,6 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-.Weather .weather-icon img {
-  max-height: 60px;
-  opacity: 40%;
-  /* padding: 50px 0 10px; */
-}
 
 .Weather .current-weather {
   text-align: center;
@@ -100,7 +95,6 @@
   position: absolute;
   bottom: 14px;
   right: -13px;
-  opacity: 80%;
   cursor: pointer;
   color: #ef7151;
   font-weight: bold;
