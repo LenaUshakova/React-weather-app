@@ -139,7 +139,10 @@
 
 .WeatherForecast {
   text-align: center;
-  margin: 30px 0 60px;
+  margin: 60px 90px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 .WeatherForecast .forecast-icon {
   opacity: 90%;
@@ -163,6 +166,7 @@
     gap: 5px;
     margin: 10px;
   }
+
   .Weather .search-field {
     width: 90%;
   }
@@ -172,8 +176,10 @@
   .Weather .city {
     font-size: 40px;
   }
-  .Weather .weather-icon img {
+  .Weather .weather-icon {
     padding: 10px 0 5px;
+  }
+  .Weather .weather-icon img {
     max-height: 40px;
   }
   .Weather .temperature {
@@ -194,6 +200,18 @@
   }
   .Weather .weather-detail {
     margin: 20px;
+    font-size: 14px;
+    padding-left: 25px;
+  }
+
+  .WeatherForecast {
+    margin: 40px auto 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 0px 10px 0px;
+  }
+  .WeatherForecast .inline {
     font-size: 14px;
   }
 }
