@@ -13,6 +13,7 @@ export default function Weather() {
 
     setForecast({
       name: response.data.name,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       // precipitation: response.data.rain[0],
@@ -59,7 +60,7 @@ export default function Weather() {
           ></i>
         </form>
         <MainInfo data={forecast} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={forecast.coordinates} />
       </div>
     );
   } else {
