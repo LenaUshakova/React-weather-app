@@ -13,10 +13,8 @@ export default function WeatherForecast({ coordinates }) {
   }, [coordinates]);
 
   function showForecast(response) {
-    console.log(response.data);
     setForecast(response.data.daily);
     setLoaded(true);
-    console.log(forecast);
   }
 
   if (loaded) {
