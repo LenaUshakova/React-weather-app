@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import MainInfo from "./MainInfo";
@@ -7,9 +7,10 @@ import WeatherForecast from "./WeatherForecast";
 export default function Weather() {
   const [forecast, setForecast] = useState({ loaded: false });
   const [city, setCity] = useState("Kyiv");
+  console.log("RENDER");
 
   function showWeather(response) {
-    console.log(response.data);
+    // console.log(response.data);
 
     setForecast({
       name: response.data.name,
