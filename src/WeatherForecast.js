@@ -17,7 +17,15 @@ export default function WeatherForecast({ coordinates }) {
   if (loaded) {
     return (
       <div className="WeatherForecast">
-        <WeatherForecastDay data={forecast[0]} />
+        {forecast.map((dailyForecast, index) => {
+          if (index < 5) {
+            return (
+              <div key={index}>
+                <WeatherForecastDay data={dailyForecast} />
+              </div>
+            );
+          }
+        })}
       </div>
     );
   } else {
