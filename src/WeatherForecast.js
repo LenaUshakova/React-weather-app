@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import axios from "axios";
 
 import WeatherForecastDay from "./WeatherForecastDay";
@@ -6,6 +6,11 @@ import WeatherForecastDay from "./WeatherForecastDay";
 export default function WeatherForecast({ coordinates }) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    // when coordinates changes > loaded false > call API
+    setLoaded(false);
+  }, [coordinates]);
 
   function showForecast(response) {
     console.log(response.data);
